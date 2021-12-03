@@ -1,0 +1,18 @@
+#!/bin//sh
+
+echo "enter the number : \c"
+read num
+echo "enter the power :\c"
+read power
+i=$num
+
+if [ $power -eq 0 ] 
+then
+	i=1
+fi
+while [ $power -gt 1 ] 
+do
+i=$(($num*$i))
+power=$(($power-1))
+done
+echo " $power power of $num is $i"

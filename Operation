@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo "enter the first number :\c"
+read num1
+echo "enter the second number:\c"
+read num2
+echo "1.Add 2.subtract 3.Multiply 4.Divide"
+echo "enter your choice :\c"
+read choice
+case $choice in
+	1) ans=$(($num1+$num2));;
+	2) ans=$(($num1-$num2));;
+	3) ans=$(($num1*$num2));;
+	4) ans=$(($num1/$num2));;
+esac
+echo " Result=$ans"
